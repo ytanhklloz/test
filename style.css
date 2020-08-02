@@ -1,0 +1,45 @@
+body{
+    margin:0;
+}
+a{
+    text-decoration:none;
+    color:black;
+    
+}
+h1{
+    font-size: 45px;
+    text-align:center;
+    color:black;
+    border-bottom:3px solid gray;
+    margin:0;
+    padding:20px;
+}
+ol{
+    border-right:2px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+}
+#g{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    margin-top: 0;
+}
+#g ol{
+    padding-left: 33px;
+}
+#g #a1{
+    text-align: center;
+}
+/* screen width < 800px */
+@media(max-width:800px){
+    #g{
+        display:block;
+    }
+    ol{
+        border-right:none;
+    }
+    h1{
+        border-bottom:none;
+    }
+}
